@@ -448,9 +448,10 @@ section.work .wrapper .portfolio .tabs ul li a.active {
 
 section.work .wrapper .portfolio .portfolio__wrapper {
     margin-top: 4rem;
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
     display: flex;
+    overflow: hidden;
 }
 
 section.work .wrapper .portfolio .portfolio__wrapper .item {
@@ -460,9 +461,11 @@ section.work .wrapper .portfolio .portfolio__wrapper .item {
 
 section.work .wrapper .portfolio .portfolio__wrapper a img {
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 150px;
+    height: 100px;
+    /* object-fit: cover; */
+    object-fit: contain;
+    
 }
 section.work .wrapper .slider__wrapper .icon__wrap {
     color: var(--info);
